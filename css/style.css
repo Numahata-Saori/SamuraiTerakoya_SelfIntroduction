@@ -1,0 +1,175 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #000000;
+  background-color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ナビゲーション */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* justify-content: center; */
+    margin: 20px 0;
+    max-width: 960px;
+
+    /* height: 69px; */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* text-align: center; */
+}
+
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 34px;
+  color: #000000;
+}
+
+.home {
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 220px;
+  height: 69px;
+
+  border: 1px solid #000000;
+}
+
+.menu {
+  display: inline-block;
+  /* font-weight: 700; */
+  line-height: 46px;
+  margin: 11px 0;
+}
+
+.mainVisual {
+  position: absolute
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  }
+
+/* セクション共通 */
+h1 {
+  margin-top: 50px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 34px;
+}
+
+p {
+  font-size: 18px;
+}
+
+li {
+    font-size: 18px;
+}
+
+.aboutImg {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+
+/* About */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 960px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.name {
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+/* Works */
+#works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 960px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.worksIntro {
+  padding: 0 20px;
+  width: 180px;
+}
+
+.worksIntro img {
+  max-width: 100%;
+  text-align: center;
+  object-fit: cover;
+}
+
+.worksIntro p {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+/* フッター */
+  footer p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  /* https://gimite.hatenablog.com/entry/20110108/1294495863  */
+
+  .home {
+    margin-left: 160px;
+  }
+
+  .menu {
+    margin-right: 160px;
+  }
+
+  .menu > a {
+    margin: 0 20px;
+  }
+
+  .selfIntro {
+    padding-left: 30px;
+  }
+
+}
+
+/* 横幅が767pxまでの場合 */
+@media screen and (max-width: 767px) {
+  .home {
+    margin-left: 20px;
+  }
+
+  .menu > a {
+    margin: 0 10px;
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  .worksIntro {
+    width: 100%;
+    text-align: center;
+  }
+
+}
